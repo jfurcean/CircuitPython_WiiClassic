@@ -47,7 +47,7 @@ while True:
         print("Button Pressed: Y")
     if controller.button_home:
         print("Button Pressed: HOME")
-    if controller.button_plus:
-        print("Button Pressed: +")
-    if controller.button_minus:
-        print("Button Pressed: -")
+    if controller.button_start:
+        print("Button Pressed: START")
+    if controller.button_select:
+        print("Button Pressed: SELECT")

@@ -143,14 +143,14 @@ class WiiClassic:
         return not bool(self.buffer[4] & 0x8)
 
     @property
-    def button_plus(self):
-        """Return current pressed state of the Plus button"""
+    def button_start(self):
+        """Return current pressed state of the Start/Plus button"""
         self._read_data()
         return not bool(self.buffer[4] & 0x4)
 
     @property
-    def button_minus(self):
-        """Return current pressed state of the Minus button"""
+    def button_select(self):
+        """Return current pressed state of the Select/Minus button"""
         self._read_data()
         return not bool(self.buffer[4] & 0x10)
 
