@@ -10,17 +10,17 @@ while True:
 
     # Right Joystick: (0-31,0-31), middle is (16,16)
     if controller.joystick_right != (16, 16):
-        print("Right Joystick (x,y): {controller.joystick_right}")
+        print("Right Joystick (x,y): ", controller.joystick_right)
 
-    # Left Joystick: (0-63,063), middle is (32,32)
+    # Left Joystick: (0-63,0-63), middle is (32,32)
     if controller.joystick_left != (32, 32):
-        print("Left Joystick (x,y): {controller.joystick_left}")
+        print("Left Joystick (x,y): ", controller.joystick_left)
 
     # Triggers: 0-31
     if controller.trigger_right > 0:
-        print("Right Trigger (x,y): {controller.trigger_right}")
+        print("Right Trigger (x,y): ", controller.trigger_right)
     if controller.trigger_left > 0:
-        print("Left Trigger (x,y): {controller.trigger_left}")
+        print("Left Trigger (x,y): ", controller.trigger_left)
 
     # DPad: True or False
     if controller.dpad_down:
